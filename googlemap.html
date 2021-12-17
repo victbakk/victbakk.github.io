@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Pulse map</title>
+
+</head>
+<center>
+<body>
+
+<div id="pulseMap" style="width:30%;height:800px;"></div>
+
+<script>
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(58.1599,8.0182),
+            zoom:13,
+        };
+        var map = new google.maps.Map(document.getElementById("pulseMap"),mapProp);
+    }
+
+    <!-- hentet fra www.w3schools.com/graphics/google_maps_intro.asp, justert til å komme inn i på Kristiansand ved åpning.-->
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAExOCCAbVWw9MJNdZ-JGc6dAeWDc2Ne3Q&callback=myMap"></script>
+
+</body>
+</center>
+</html>

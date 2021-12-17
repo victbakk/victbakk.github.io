@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-up</title>
+
+    <style>
+
+     .signupbutton {
+     display: inline-block;
+     border: none;
+     padding: 20px 45px;
+     margin-bottom: 0;
+     font-size: 24px;
+     font-weight: normal;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 4px;
+     color: #fff;
+     background-color: #189AB4;
+     }
+
+.signupbutton:hover {
+color: #fff;
+    background-color: #E6E6E6;
+}
+
+ .inputtext {
+     display: inline-block;
+     padding: 20px 30px;
+     margin-bottom: 0;
+     font-size: 18px;
+     font-weight: normal;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 4px;
+     color: #8C8C8C;
+     background-color: #fff;
+     border-color: #8C8C8C;
+     }
+
+     #num {
+     display: inline-block;
+     padding: 20px 173px;
+     margin-bottom: 0;
+     font-size: 18px;
+     font-weight: normal;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 4px;
+     color: #8C8C8C;
+     background-color: #fff;
+     border-color: #8C8C8C;
+     }
+
+     #pass {
+     display: inline-block;
+     padding: 20px 173px;
+     margin-bottom: 0;
+     font-size: 18px;
+     font-weight: normal;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 4px;
+     color: #8C8C8C;
+     background-color: #fff;
+     border-color: #8C8C8C;
+     }
+
+.clear, .clear1, .clear10, .clear15, .clear20, .clear30, .clear40, .clear60, .clear120, .clear240 {
+     clear: both;
+     font-size: 0;
+     line-height: 0;
+     }
+
+     .clear {height: 0;}
+     .clear1 {height: 1px;}
+     .clear10 {height: 10px;}
+     .clear15 {height: 15px;}
+     .clear20 {height: 20px;}
+     .clear30 {height: 20px;}
+     .clear40 {height: 40px;}
+     .clear60 {height: 60px;}
+     .clear120 {height: 120px;}
+     .clear240 {height: 240px;}
+     /*format for forskjellig spacing, brukes i inputs, mye bedre enn br. kun 15 og 40 er brukt i teksten. Det er en slags CSS template.*/
+
+ </style>
+
+</head>
+<body>
+<center>
+<!--https://www.w3schools.com/howto/howto_css_register_form.asp-->
+
+    <div class="container">
+
+        <img src="/images/signinpagepicture.png" alt="Pulse: Socialize now!" width="200" height="auto">
+             <br>
+        <h1 style="font-family: verdana">Relationships matter. Build yours.</h1>
+
+        <p style="font-family: verdana">Join Pulse now. It's free!</p>
+<div class="clear40">
+        <label for="fname"></label>
+        <input type="text" class="inputtext" name="firstname" id="fname" placeholder="First Name" required>
+
+        <label for="lname"></label>
+        <input type="text" class="inputtext" name="lastname" id="lname" placeholder="Last Name" required>
+    </div>
+
+    <div class="clear40"></div>
+        <label for="num"></label>
+        <input type="tel" class=inputtext name="num" id="num" placeholder="Mobile number" required>
+
+    <div class="clear15"></div>
+        <label for="pass"></label>
+        <input type="password" class="inputtext" name="pass" id="pass" placeholder="Enter Password" required>
+
+        <div class="clear15"></div>
+        <!-- An element to toggle between password visibility -->
+   <input type="checkbox" onclick="myFunction()">Show Password
+        <div class="clear15"></div>
+
+        <a href="googlemap.html" type="submit" class="signupbutton">Create account</a>
+
+
+        <!-- <div class="tac" -- Nødvendig? -->
+        <p class="tac">By signing up, you agree to our <a href="legal/terms.html/" id="terms-link" target="_blank" rel="nofollow">Terms</a>. Learn how we collect, use and share your data in our <a href="legal/datapolicy.html" id="privacy-link" target="_blank" rel="nofollow">Data Policy</a>.</p>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("pass");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+</center>
+</body>
+</html>
